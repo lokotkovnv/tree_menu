@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load menu_tags %}
+<head>
+    <title>Меню</title>
+</head>
+<body>
+    <nav>
+        {% draw_menu 'main_menu' %}
+    </nav>
+
+    <div>
+        <h1>Контент страницы</h1>
+        {% draw_menu 'secondary_menu' %}
+        <p>Здесь будет основной контент страницы.</p>
+    </div>
+</body>
+</html>
